@@ -23,12 +23,6 @@
 	body{
 		/* background-color: blue; */
 	}
-	.carousel-section{
-		margin-top: 60px;
-	}
-	.section-discount img{
-		margin-top: 20px;
-	}
 
  }
  
@@ -36,18 +30,6 @@
  @media screen and (orientation:landscape) {
 	body{
 		/* background-color: red */
-	}
-	.section-special{
-		margin-top: 100px;
-	}
-	.carousel-section{
-		margin-top: 100px;
-	}
-	.section-discount{
-		/* margin-top: 20px; */
-	}
-	.section-whyChoose{
-		margin-top: 100px;
 	}
 }
  
