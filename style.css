@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Pacifico&family=Poppins:wght@300;400;700&display=swap');
 
 /*===== Global =====*/
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 :root{
 	--green-1: #26643b;
 	--green-2: #a2de96;
@@ -17,10 +18,14 @@
 	--black-3: #5b6359;
 	--white-1: #e8e8e8;
 	--SlateBlue: #6A5ACD;
+	--Magenta:	#FF00FF;
+	--LightCyan: #E0FFFF;
+	--Lavender:	#E6E6FA;
 }
+
 body{
 	font-family: 'Poppins';
-	overflow: hidden;
+	overflow-x: hidden;
 }
 h1,h2,h3,h4,h5{
 	color: var(--black-2);
@@ -40,7 +45,7 @@ ul{
 }
 /* header */
 header{
-	background: var(--green-2);
+	background: var(--Lavender);
 	width: 100vw;
 	height: 90vh;
 }
@@ -48,46 +53,105 @@ header{
 	display: flex;
 	justify-content: space-between;
 }
-.navlinks{
-	background: var(--);
+.navLinks{
+	background: var();
 	display: flex;
 	align-items: center;
 }
-.navlinks li{
+.navLinks li{
 	margin: 0 20px;
 }
-.navlinks img{
+.navLinks img{
 	width: 50px;
 }
-.navlinks li a{
+.navLinks li a{
 	color: var(--black-1);
+}
+.header-content{
+	display: flex;
+	align-items: center;
+}
+.header-content img{
+	max-width: 90%;
+}
+.header-info{
+	flex: 60%;
+}
+.line{
+	width: 150px;
+	height: 4px;
+	background: var(--Magenta);
+	border-radius: 5px;
+}
+.header-info h1{
+	font-size: 50px;
+}
+.header-info h3, .header-info p{
+	margin: 15px 0;
+}
+.ctn{
+	padding: 10px 16px;
+	background: var(--green-1);
+	color: whitesmoke;
+	border-radius: 10px;
+	border: none;
+	font-size: 16px;
+	margin-top: 30px;
+}
+.menuBtn img{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 30px;
+	display: none;
+	
 }
 /* mobile device */
 @media only screen and (max-width:750px){
+	.menuBtn img{
+		display: block;
+	}
 	.container{
 		width: 90%;
 	}
 	.navbar{
 		flex-direction: column;
 	}
-	.navlinks{
+	.navLinks{
 		flex-direction: column;
-		background: var(--SlateBlue);
+		background:  var(--SlateBlue);
 		width: 100vw;
 		height: 100vh;
 		position: absolute;
 		top: 0;
 		left: 0;
-		margin-top: ;
+		margin-top: -900px;
+		transition: all 0.5s ease-in-out;
 	}
-	.navlinks li{
+	.navLinks.active{
+		margin-top: 0px;
+	}
+	.navLinks li{
 		margin: 20px auto;
 	}
-	.navlinks li a{
-		color: var(--black-1);
+	.navLinks li a{
+		color: #dddddd;
 	}
 	.brand img{
 		width: 100px;
+	}
+	.header-content{
+		margin: 50px auto;
+		flex-direction: column;
+	}
+	.line{
+		width: 100px;
+	}
+	.header-content img{
+		margin: 30px auto;
+	}
+	.header-content h1{
+		font-size: 40px;
 	}
 }
 
