@@ -16,6 +16,7 @@
 	--black-2: #3f3c3c;
 	--black-3: #5b6359;
 	--white-1: #e8e8e8;
+	--SlateBlue: #6A5ACD;
 }
 body{
 	font-family: 'Poppins';
@@ -55,53 +56,39 @@ header{
 .navlinks li{
 	margin: 0 20px;
 }
-
-
-
-/* navbar  */
-/* .navbar{
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	padding: 20px;
+.navlinks img{
+	width: 50px;
 }
-.nav-links{
-	display: flex;
-	align-items: center;
+.navlinks li a{
+	color: var(--black-1);
 }
-.nav-links li{
-	margin: 0 30px;
-} */
-/* mobil device */
-/* @media only screen and (max-width:850px){ */
-	/* .navbar{
-		padding: 0;
+/* mobile device */
+@media only screen and (max-width:750px){
+	.container{
+		width: 90%;
 	}
-	.menu-btn{
-		display: block;
-	}
-	.logo{
-		position: absolute;
-		top: 30px;
-		left: 30px;
-	}
-	.nav-links{
+	.navbar{
 		flex-direction: column;
-		width: 100%;
+	}
+	.navlinks{
+		flex-direction: column;
+		background: var(--SlateBlue);
+		width: 100vw;
 		height: 100vh;
-		justify-content: center;
-		background: #484872;
-		margin-top: -900px;
-		transition: all 0.5s ease;
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin-top: ;
 	}
-	.mobile-menu{
-		margin-top: 0px;
-		border-bottom-right-radius: 30%;
+	.navlinks li{
+		margin: 20px auto;
 	}
-	.nav-links li{
-		margin: 30px auto;
+	.navlinks li a{
+		color: var(--black-1);
 	}
-} */
+	.brand img{
+		width: 100px;
+	}
+}
+
+
