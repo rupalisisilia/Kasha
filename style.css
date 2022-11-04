@@ -135,6 +135,9 @@ header{
 .topDishe{
 	text-align: center;
 }
+#copyright{
+	text-align: center;
+}
 /* mobile device */
 @media only screen and (max-width:750px){
 	.menuBtn img{
@@ -217,6 +220,9 @@ header{
 		text-align: center;
 	}.topDishe img{
 		max-width: 90%;
+	}
+	#copyright{
+		text-align: center;
 	}
 }
 
