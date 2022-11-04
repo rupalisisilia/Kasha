@@ -1,3 +1,4 @@
+
 /* Goolge Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Pacifico&family=Poppins:wght@300;400;700&display=swap');
 
@@ -9,7 +10,7 @@
 }
 
 :root{
-	--green-1: #26643b;
+	--green-1: #008037;
 	--green-2: #a2de96;
 	--lightgreen-1: #d6e5d8;
 	--lightgreen-2: #f5fcf4;
@@ -39,73 +40,133 @@ p{
 ul{
 	list-style: none;
 }
+img{
+	width: 100%;
+}
 .container{
-	width: 80%;
+	width: 90%;
 	margin: auto;
 }
-/* header */
-header{
-	background: var(--Lavender);
-	width: 100vw;
-	height: 90vh;
+.container .section-header{
+	text-align: center;
 }
+.btnPrimary{
+	padding: 10px 20px;
+	background: var(--green-1);
+	color: whitesmoke;
+	border-radius: 10px;
+	border: none;
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+
+
+
+
+
+/* Navbar */
 .navbar{
-	display: flex;
-	justify-content: space-between;
+	display: block;
+	width: 100%;
+	position: fixed;
+	background-color: white;
+}
+.navbar img{
+	width: 150px;
+	padding: 10px 0;
 }
 .navLinks{
 	background: var();
 	display: flex;
 	align-items: center;
+	flex-direction: column;
+	background:  var(--SlateBlue);
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: -900px;
+	transition: all 0.5s ease-in-out;
+	padding-top: 80px;
 }
 .navLinks li{
-	margin: 0 20px;
+	margin: 20px auto;
 }
 .navLinks img{
 	width: 50px;
 }
 .navLinks li a{
-	color: var(--black-1);
+	color: #dddddd;
 }
-.header-content{
-	display: flex;
-	align-items: center;
+.navLinks.active{
+	margin-top: 0px;
 }
-.header-content img{
-	max-width: 90%;
+
+.menuBtn{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 30px;
+	font-size: 25px;
+	display: block;
+	color: black;
 }
-.header-info{
-	flex: 60%;
-}
+
+
+/* ------- */
+
+#section-one{background-color: #c1bbe4;}
+#section-two{background-color: #cd7e5a;}
+#section-three{background-color: #5acd67;}
+
+
+
+
+
+
+/* section-one */
 .line{
 	width: 150px;
 	height: 4px;
 	background: var(--Magenta);
 	border-radius: 5px;
 }
-.header-info h1{
-	font-size: 50px;
+#section-one img,.text{
+	padding-top: 20px;
 }
-.header-info h3, .header-info p{
-	margin: 15px 0;
+#section-one .btnPrimary{	
+	background: black;
 }
-.ctn{
-	padding: 10px 16px;
-	background: var(--green-1);
-	color: whitesmoke;
-	border-radius: 10px;
-	border: none;
-	font-size: 16px;
-	margin-top: 30px;
-}
-.menuBtn img{
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	width: 30px;
-	display: none;
-	
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #categories{
 	display: flex;
 	margin-top: 50px;
@@ -138,92 +199,64 @@ header{
 #copyright{
 	text-align: center;
 }
+
+
+
+#categories{
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+.food{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 20px;
+}
+.category{
+	margin: 20px auto;
+	text-align: center
+}
+.category img{
+	max-width: 90%;
+}
+#specials{
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+.special{
+	margin: 20px auto;
+	text-align: center;
+}.special img{
+	max-width: 90%;
+}
+#topDishes{
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+.topDishe{
+	margin: 20px auto;
+	text-align: center;
+}.topDishe img{
+	max-width: 90%;
+}
+#copyright{
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* mobile device */
 @media only screen and (max-width:750px){
-	.menuBtn img{
-		display: block;
-	}
-	.container{
-		width: 90%;
-	}
-	.navbar{
-		flex-direction: column;
-	}
-	.navLinks{
-		flex-direction: column;
-		background:  var(--SlateBlue);
-		width: 100vw;
-		height: 100vh;
-		position: absolute;
-		top: 0;
-		left: 0;
-		margin-top: -900px;
-		transition: all 0.5s ease-in-out;
-	}
-	.navLinks.active{
-		margin-top: 0px;
-	}
-	.navLinks li{
-		margin: 20px auto;
-	}
-	.navLinks li a{
-		color: #dddddd;
-	}
-	.brand img{
-		width: 100px;
-	}
-	.header-content{
-		margin: 50px auto;
-		flex-direction: column;
-	}
-	.line{
-		width: 100px;
-	}
-	.header-content img{
-		margin: 30px auto;
-	}
-	.header-content h1{
-		font-size: 40px;
-	}
-	#categories{
-		flex-direction: column;
-		margin-bottom: 30px;
-	}
-	.food{
-		text-align: center;
-		font-size: 20px;
-		margin-top: 20px;
-	}
-	.category{
-		margin: 20px auto;
-		text-align: center
-	}
-	.category img{
-		max-width: 90%;
-	}
-	#specials{
-		flex-direction: column;
-		margin-bottom: 30px;
-	}
-	.special{
-		margin: 20px auto;
-		text-align: center;
-	}.special img{
-		max-width: 90%;
-	}
-	#topDishes{
-		flex-direction: column;
-		margin-bottom: 30px;
-	}
-	.topDishe{
-		margin: 20px auto;
-		text-align: center;
-	}.topDishe img{
-		max-width: 90%;
-	}
-	#copyright{
-		text-align: center;
-	}
 }
 
 
