@@ -25,6 +25,7 @@
 }
 
 body{
+	background-color: var(--lightgreen-2);
 	font-family: 'Poppins';
 	overflow-x: hidden;
 }
@@ -87,7 +88,7 @@ img{
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin-top: -900px;
+	margin-top: -1000px;
 	transition: all 0.5s ease-in-out;
 	padding-top: 80px;
 }
@@ -117,7 +118,7 @@ img{
 
 /* ------- */
 
-#section-one{background-color: #c1bbe4;}
+/* #section-one{background-color: #c1bbe4;} */
 #section-two{background-color: #cd7e5a;}
 #section-three{background-color: #5acd67;}
 
@@ -132,12 +133,52 @@ img{
 	height: 4px;
 	background: var(--Magenta);
 	border-radius: 5px;
+	margin-bottom: 10px;
 }
-#section-one img,.text{
+#section-one img, .text{
 	padding-top: 20px;
 }
 #section-one .btnPrimary{	
 	background: black;
+}
+#section-one .line{
+	margin-left: 100px;
+}
+#section-one .text{
+	text-align: center;
+}
+
+
+/* section-two */
+#section-two h3{
+	text-align: center;
+	padding: 20px 0;
+
+}
+#section-two h1{
+	padding: 20px 0;
+}
+
+/* section-three */
+#section-three h3{
+	text-align: center;
+	padding: 20px 0;
+}
+#section-three h1{
+	padding: 20px 0;
+}
+
+/* section-four */
+#section-four h3{
+	text-align: center;
+	padding-top: 20px;
+}
+#section-four h1{
+	text-align: center;
+	padding: 20px 0;
+}
+#section-four p{
+	padding-bottom: 20px;
 }
 
 
