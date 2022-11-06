@@ -180,6 +180,31 @@ img{
 #section-four p{
 	padding-bottom: 20px;
 }
+.copyright p{
+	text-align: center;
+	padding: 15px 0;
+}
+
+
+/* Landscape */
+
+@media only screen and (max-width: 1200px) {
+	.navbar-wrapper{
+		display: flex;
+		justify-content: space-between;
+	}
+	.menuBtn{
+		display: none;
+	}
+	.navLinks li{
+		display: inline-block;
+	}
+
+	/* section-one */
+	
+	
+}
+	
 
 
 
