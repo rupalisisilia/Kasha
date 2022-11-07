@@ -78,11 +78,10 @@ img{
 	padding: 10px 0;
 }
 .navLinks{
-	background: var();
+	background: var(--SlateBlue);
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	background:  var(--SlateBlue);
 	width: 100vw;
 	height: 100vh;
 	position: absolute;
@@ -101,7 +100,7 @@ img{
 .navLinks li a{
 	color: #dddddd;
 }
-.navLinks.active{
+.navLinks .active{
 	margin-top: 0px;
 }
 
